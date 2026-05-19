@@ -5,11 +5,11 @@ on: [push]
 jobs:
   run-script:
     runs-on: ubuntu-latest
-    
     steps:
-        - name: Run multi-line shell script
-          run: |
-            echo "Starting script"
-            pwd
-            ls -l
-            echo "Script finished"
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+
+      - name: Run a shell script
+        run: |
+          echo "Hello from GitHub Actions"
+          ./scripts/setup.sh
