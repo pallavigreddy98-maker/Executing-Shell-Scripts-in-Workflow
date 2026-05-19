@@ -9,6 +9,9 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
 
+      - name: Run shell script
+        run: chmod +x setup.sh && ../scripts/setup.sh
+
       - name: Run a shell script
         run: |
           echo "Hello from GitHub Actions"
