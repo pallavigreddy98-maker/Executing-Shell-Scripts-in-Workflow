@@ -5,6 +5,11 @@ on: [push]
 jobs:
   run-script:
     runs-on: ubuntu-latest
+    
     steps:
-        - name: Run simple shell command
-          run: echo "Hello from shell!"
+        - name: Run multi-line shell script
+          run: |
+          echo "Starting script"
+          pwd
+          ls -l
+          echo "Script finished"
