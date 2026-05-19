@@ -1,6 +1,7 @@
-steps:
-  - name: Checkout code
-    uses: actions/checkout@v3
+#!/bin/bash
 
-  - name: Run simple shell command
-    run: echo "Hello from shell!"
+echo "Hello from GitHub Actions"
+
+mkdir output
+
+echo "Done"
