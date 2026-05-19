@@ -9,7 +9,7 @@ jobs:
     steps:
         - name: Run multi-line shell script
           run: |
-          echo "Starting script"
-          pwd
-          ls -l
-          echo "Script finished"
+            echo "Starting script"
+            pwd
+            ls -l
+            echo "Script finished"
