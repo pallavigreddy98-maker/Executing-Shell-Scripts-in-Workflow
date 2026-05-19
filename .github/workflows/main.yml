@@ -1,1 +1,10 @@
+name: Run Shell Script Example
 
+on: [push]
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+        - name: Run simple shell command
+          run: echo "Hello from shell!"
